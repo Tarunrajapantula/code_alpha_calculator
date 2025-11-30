@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    font-family: 'Poppins',sans-serif;
+}
+#calculator{
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    width: 300px;
+}
+#display{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    font-size: 1.8rem;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #2b2b3d;
+    color: white;
+    outline: none;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+
+}
+button{
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color:#3b3b52;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    background-color: 575775;
+}
+.operator-btn{
+    background-color: #ff9f43;
+    color: white;
+    font-weight: bold;
+}
+.operator-btn:hover{
+    background-color: #ffa94d;
+}
+button[onclick="calculate()"]{
+    background-color: #10b981;
+    color: white;
+    font-weight: bold;
+}
+button[onclick="calcuate()"]:hover{
+    background-color: #34d399;
+}
+button[onclick="backspace()"] {
+    background-color: #3b82f6;
+}
+
+button[onclick="backspace()"]:hover {
+    background-color: #60a5fa;
+}
+button[onclick="appendToDisplay('%')"] {
+    background-color: #3b82f6;
+}
+
+button[onclick="appendToDisplay('%')"]:hover {
+    background-color: #60a5fa;
+}
